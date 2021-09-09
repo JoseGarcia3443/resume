@@ -1,6 +1,5 @@
 <template lang="pug">
 .landing(data-scroll-container)
-  site-header
 </template>
 
 <script>
