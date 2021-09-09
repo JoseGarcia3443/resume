@@ -1,5 +1,5 @@
 <template lang="pug">
-section(data-scroll-section)
+section(data-scroll-section id="projects")
   .container
     .row.no-gutters.justify-content-center.align-items-center(
       data-scroll,
@@ -18,5 +18,7 @@ export default {
 <style lang="scss" scoped>
 section {
   min-height: 100vh;
+  padding: 5rem 0;
+  background-image: url('~assets/header.png');
 }
 </style>
