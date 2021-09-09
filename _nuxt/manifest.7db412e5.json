@@ -1,0 +1,11 @@
+{
+  "name": "@jose/resume-landing",
+  "short_name": "@jose/resume-landing",
+  "description": "Resume",
+  "icons": [],
+  "start_url": "/?standalone=true",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#00B9E3",
+  "lang": "es"
+}
