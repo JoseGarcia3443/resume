@@ -3,17 +3,57 @@ module.exports = {
   /*
    ** Headers of the page
    */
+  server: {
+    port: 3000, // default: 3000
+    host: '0.0.0.0' // default: 3000
+  },
   head: {
-    title: 'Resume José Ángel García Márquez',
+    title: 'José Ángel García Márquez | Resume',
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'keywords', content: '' },
+      {
+        hid: 'title',
+        name: 'title',
+        content: 'José Ángel García Márquez | Resume'
+      },
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
-      }
+        content: ''
+      },
+      {
+        hid: 'og:type',
+        property: 'og:type',
+        content: 'website'
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://jose-garcia-resume.netlify.app/'
+      },
+      {
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: 'José Ángel García Márquez | Resume'
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: ''
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'José Ángel García Márquez | Resume'
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: ''
+      },
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'keywords', content: 'frontend, developer, backend, vuejs, nuxtjs' },
+      { name: 'theme-color', content: '#ffffff' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -51,16 +91,19 @@ module.exports = {
         href:
           'https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,500&display=swap'
       }
+    ],
+    script: [
+      { hid: 'fontawesome', src: 'https://kit.fontawesome.com/ba13348da6.js', ssr: false }
     ]
   },
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#00B9E3' },
+  loading: { color: '#ffffff' },
   loadingIndicator: {
     name: 'circle',
-    color: '#3B8070',
-    background: 'white'
+    color: '#ffffff',
+    background: 'black'
   },
   /*
    ** Global CSS
@@ -69,6 +112,9 @@ module.exports = {
     'normalize.css/normalize.css',
     '~css/main.scss',
     '~css/simple-grid/bootstrap-grid',
+    '~css/locomotive-scroll.css',
+    'animate.css/animate.css',
+    '~css/animations.scss',
   ],
   /*
    ** Plugins to load before mounting the App
@@ -113,7 +159,7 @@ module.exports = {
   pwa: {
     manifest: {
       lang: 'es',
-      theme_color: '#00B9E3'
+      theme_color: '#000000'
     }
   },
   /*

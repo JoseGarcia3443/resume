@@ -1,0 +1,163 @@
+:root {
+  --animate-duration: 1s;
+  --animate-delay: 1s;
+  --animate-repeat: 1;
+}
+
+
+.fade_in {
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  &.is-inview {
+    opacity: 1;
+    animation: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: calc(var(--animate-duration));
+    animation-duration: calc(var(--animate-duration));
+    animation-delay: var(--animate-delay);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+}
+
+.fade_in_up {
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  &.is-inview {
+    opacity: 1;
+    animation: fadeInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: calc(var(--animate-duration));
+    animation-duration: calc(var(--animate-duration));
+    animation-delay: var(--animate-delay);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+}
+.fade_in_down {
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  &.is-inview {
+    opacity: 1;
+    animation: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: calc(var(--animate-duration));
+    animation-duration: calc(var(--animate-duration));
+    animation-delay: var(--animate-delay);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+}
+
+.fade_in_right {
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  &.is-inview {
+    opacity: 1;
+    animation: fadeInRight;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: calc(var(--animate-duration));
+    animation-duration: calc(var(--animate-duration) * 1.5);
+    animation-delay: var(--animate-delay);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+}
+.fade_in_left {
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  &.is-inview {
+    opacity: 1;
+    animation: fadeInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: calc(var(--animate-duration));
+    animation-duration: calc(var(--animate-duration) * 1.5);
+    animation-delay: var(--animate-delay);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+}
+
+.bounce_in {
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  &.is-inview {
+    opacity: 1;
+    animation: bounceIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: calc(var(--animate-duration));
+    animation-duration: calc(var(--animate-duration) * 1.5);
+    animation-delay: var(--animate-delay);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+}
+
+.bounce_in {
+opacity: 0;
+transition: all 0.3s ease-in;
+  &.is-inview {
+    opacity: 1;
+    animation: bounceIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: calc(var(--animate-duration));
+    animation-duration: calc(var(--animate-duration) * 2);
+    animation-delay: var(--animate-delay);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+}
+.bounce_in_up {
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  &.is-inview {
+    opacity: 1;
+    animation: bounceInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: calc(var(--animate-duration));
+    animation-duration: calc(var(--animate-duration) * 1.5);
+    animation-delay: var(--animate-delay);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+}
+
+.zoom_in {
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  &.is-inview {
+    transition: all 0.3s ease-in;
+    opacity: 1;
+    animation: zoomIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: calc(var(--animate-duration));
+    animation-duration: calc(var(--animate-duration));
+    animation-delay: var(--animate-delay);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+}
+.zoom_in_down {
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  &.is-inview {
+    opacity: 1;
+    animation: zoomInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: calc(var(--animate-duration));
+    animation-duration: calc(var(--animate-duration) * 2);
+    animation-delay: var(--animate-delay);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+}

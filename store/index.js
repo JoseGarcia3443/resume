@@ -12,6 +12,7 @@ export const mutations = {
 
 export const actions = {
   setTarget({ commit }, payload) {
+    console.log(payload)
     commit('SET_TARGET', payload)
   }
 }

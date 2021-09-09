@@ -1,7 +1,5 @@
 {
-  "name": "@jose/resume-landing",
   "version": "1.0.0",
-  "description": "Resume",
   "author": "Jose Garcia <josej19g@gmail.com>",
   "contributors": [
     "Jose Garcia <josej19g@gmail.com>"
@@ -40,6 +38,7 @@
     "@nuxtjs/i18n": "^7.0.1",
     "@nuxtjs/pwa": "^3.0.0-0",
     "@nuxtjs/sitemap": "^2.4.0",
+    "animate.css": "^4.1.1",
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
     "gsap": "^3.3.3",

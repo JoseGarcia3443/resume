@@ -1,5 +1,8 @@
 <template lang="pug">
 .landing(data-scroll-container)
+  site-header
+  profile
+  proyects
 </template>
 
 <script>
@@ -8,7 +11,11 @@ import PageMixin from '@/mixins/PageMixin.js'
 
 export default {
   name: 'Home',
-  components: {},
+  components: {
+    'site-header': () => import('@/components/sections/SiteHeader.vue'),
+    'profile': () => import('@/components/sections/Profile.vue'),
+    'proyects': () => import('@/components/sections/Proyects.vue')
+  },
   mixins: [PageMixin],
   computed: {
     ...mapGetters(['scrollToTarget', 'scrollEvent'])
@@ -59,6 +66,51 @@ export default {
         this.scroll.update()
       }
     }
-  }
+  },
+  head: () => ({
+    title: 'José Ángel García Márquez | Resume',
+    meta: [
+      {
+        hid: 'title',
+        name: 'title',
+        content: 'José Ángel García Márquez | Resume'
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: ''
+      },
+      {
+        hid: 'og:type',
+        property: 'og:type',
+        content: 'website'
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://jose-garcia-resume.netlify.app/'
+      },
+      {
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: 'José Ángel García Márquez | Resume'
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: ''
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'José Ángel García Márquez | Resume'
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: ''
+      },
+    ],
+  })
 }
 </script>
