@@ -186,7 +186,7 @@ module.exports = {
    ** Build configuration
    */
   generate: {
-    dir: 'src'
+    dir: 'dist'
   },
   build: {
     /*
