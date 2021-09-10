@@ -1,14 +1,16 @@
 <template lang="pug">
-.project__wraper.col-12(:class="project.title")
+.project__wraper.col-12(:class='project.title')
   .row.no-gutters.justify-content-between.align-items-center
     .information__wrapper.col-12.col-md-6.col-lg-5(
-      data-scroll,
-      data-scroll-speed='4',
-      data-scroll-delay='0.1',
       :class='{ "order-md-2": position }'
     )
-      h4(data-scroll class="animate__animated fade_in_up") {{ $t(`projects.${project.title}.title`) }}
-      p {{ $t(`projects.${project.title}.description`) }}
+      h4(data-scroll, data-scroll-speed='4', data-scroll-delay='0.1') {{ $t(`projects.${project.title}.title`) }}
+      p(data-scroll, data-scroll-speed='4', data-scroll-delay='0.2') {{ $t(`projects.${project.title}.description`) }}
+      span(
+        data-scroll,
+        data-scroll-speed='4',
+        data-scroll-delay='0.3'
+      ) {{ $t(`projects.${project.title}.tools`) }}
     .col-12.col-md-5.col-lg-5(
       data-scroll,
       data-scroll-speed='4',
@@ -25,7 +27,7 @@
     data-scroll,
     data-scroll-speed='6',
     data-scroll-delay='0.1',
-    :class="{ 'left': !position, 'right': position }"
+    :class='{ left: !position, right: position }'
   )
 </template>
 
@@ -48,17 +50,23 @@ export default {
 
 <style lang="scss" scoped>
 .project__wraper {
-  margin-bottom: 50px;
+  padding: 2rem 0;
   min-height: 50vh;
   position: relative;
-  .project__image__overlay {
+  .project__image__overlay,
+  .project__tools {
     position: absolute;
-    opacity: 0.2;
+    opacity: 0.1;
     width: 100%;
     top: 0;
     @media (min-width: 768px) {
-    	width: 50%;
+      width: 50%;
     }
+  }
+  .project__tools {
+    bottom: 0;
+    color: var(--default);
+    opacity: 0.5;
   }
   .row {
     height: 100%;
@@ -70,6 +78,12 @@ export default {
       }
       p {
         font-size: 1.5rem;
+        margin-bottom: 25px;
+      }
+      span {
+        width: 100%;
+        display: block;
+        text-align: center;
       }
     }
     .image__wrapper {
@@ -95,7 +109,7 @@ export default {
   }
   .project__image__overlay {
     @media (min-width: 768px) {
-    	width: 25%;
+      width: 25%;
     }
   }
 }

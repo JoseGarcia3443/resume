@@ -14,7 +14,7 @@ export default {
   },
   profile: {
     title: 'Acerca de mí',
-    description: 'Soy un desarrollador Frontend y Backend, con 2+ años de experiencia profesional, en el desarrollo de herramientas y soluciones para clientes. Creatividad, decision y espíritu de equipo es algo que me define. Apasionado por los detalles y siempre apoyando la mejora continua.'
+    description: 'Soy un desarrollador Frontend y Backend, con 2+ años de experiencia profesional, en el desarrollo de herramientas y soluciones para clientes. Creatividad, decisión y espíritu de equipo es algo que me define. Apasionado por los detalles y siempre apoyando la mejora continua.'
   },
   tools: {
     vue: 'VueJS',
@@ -44,6 +44,16 @@ export default {
       title: 'Sercom',
       description: 'Plataforma web CRM en la que se gestionan clientes, usuarios, proveedores, así como presupuestos, pedidos de compra, envíos y recibos de productos.',
       tools: 'Laravel - VueJS- JavaScript - SCSS - RESTApi'
+    }
+  },
+  experience: {
+    title: 'Experiencia',
+    controlla: {
+      title: 'CCD Technologies SAPI de CV - Controlla.',
+      position: 'Desarrollador FullStack',
+      date: 'Julio, 2020 - hasta ahora',
+      description: 'Líder en la creación, de soluciones creativas a la medida de los requerimientos del cliente, diseño de bases de datos, diseño y desarrollo de backend y frontend en aplicaciones web asi como tambien su despliegue en el servidor.',
+      tools: 'Laravel - VueJS - JavaScript - NuxtJS - SCSS - Animations - Conekta'
     }
   }
 }

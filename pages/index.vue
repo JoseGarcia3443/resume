@@ -3,6 +3,7 @@
   site-header
   profile
   proyects
+  experience
 </template>
 
 <script>
@@ -14,7 +15,8 @@ export default {
   components: {
     'site-header': () => import('@/components/sections/SiteHeader.vue'),
     'profile': () => import('@/components/sections/Profile.vue'),
-    'proyects': () => import('@/components/sections/Proyects.vue')
+    'proyects': () => import('@/components/sections/Proyects.vue'),
+    'experience': () => import('@/components/sections/Experience.vue')
   },
   mixins: [PageMixin],
   computed: {

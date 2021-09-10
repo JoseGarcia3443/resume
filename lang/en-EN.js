@@ -46,5 +46,15 @@ export default {
       description: 'CRM web platform in which customers, user, suppliers as well as quotations, purchase orders, shipping and receipts of products are managed.',
       tools: 'Laravel - VueJS- JavaScript - SCSS - RESTApi'
     }
+  },
+  experience: {
+    title: 'Experience',
+    controlla: {
+      title: 'CCD Technologies SAPI de CV - Controlla.',
+      position: 'FullStack Developer',
+      date: 'July, 2020 - till now',
+      description: 'Leader in the creation of innovative and customized solutions based on customer requirements, database design, RestApi, Webservices, backend and frontend development in web applications as well as their deployment.',
+      tools: 'Laravel - VueJS - JavaScript - NuxtJS - SCSS - Animations - Conekta'
+    }
   }
 }

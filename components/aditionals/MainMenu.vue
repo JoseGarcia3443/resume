@@ -3,7 +3,7 @@
   transition(
     mode="out-in"
     enter-active-class="animate__animated animate__fadeInRight"
-    leave-active-class="animate__animated animate__fadeOutLeft")
+    leave-active-class="animate__animated animate__fadeOutRight")
     #main-menu(v-if="visible")
       .wrapper__content
         button(@click="$emit('toggle')" class="btn btn-close")
