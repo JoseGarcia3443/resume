@@ -93,7 +93,9 @@ module.exports = {
       }
     ],
     script: [
-      { hid: 'fontawesome', src: 'https://kit.fontawesome.com/ba13348da6.js', ssr: false }
+      { hid: 'fontawesome', src: 'https://kit.fontawesome.com/ba13348da6.js', ssr: false },
+      { hid: 'jquery', src: 'https://code.jquery.com/jquery-3.6.0.min.js', ssr: false },
+      { hid: 'webgl', src: '/webgl.js', ssr: false }
     ]
   },
   /*

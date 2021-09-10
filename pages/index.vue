@@ -31,6 +31,7 @@ export default {
     this.element = this.$el
     this.$nextTick(() => {
       setTimeout(() => this.createScroll(), 300)
+      setTimeout(() => this.onResize(), 2000);
     })
   },
   beforeDestroy() {

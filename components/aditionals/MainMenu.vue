@@ -9,7 +9,7 @@
         button(@click="$emit('toggle')" class="btn btn-close")
           i.fas.fa-times
         ul.menu__links
-          li.menu__item.animate__animated.animate__bounceInDown(
+          li.menu__item.animate__animated.animate__fadeInRight(
             v-for='(link, index) in links',
             :key='index',
             @click='setTargetScroll(`#${link.name}`)',

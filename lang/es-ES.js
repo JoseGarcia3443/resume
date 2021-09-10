@@ -24,6 +24,26 @@ export default {
     node: 'NodeJS'
   },
   projects: {
-    title: 'Proyectos'
+    title: 'Proyectos',
+    pimsa: {
+      title: 'PIMSA Agente de seguros',
+      description: 'Página web para una aseguradora que permite a los clientes ver los productos y / o servicios que ofrece PIMSA, administra mensajes de correo electrónico. Todo ello gestionado desde un panel CMS.',
+      tools: 'Laravel - VueJS - NuxtJS - JavaScript - SCSS - RESTApi'
+    },
+    materialista: {
+      title: 'Materialista',
+      description: 'Página web para una empresa de construcción premium que le permite mostrar sus servicios y/o productos, asi como su portafolio, gestiona los mensajes de correo electrónico. Todo esto se gestiona desde un panel CMS.',
+      tools: 'Laravel - VueJS - NuxtJS - JavaScript - SCSS - RESTApi - WebGL'
+    },
+    leanfit: {
+      title: 'Leanfit',
+      description: 'Página web fitness para mostrar los servicios que se ofrecen, gestión de cuentas de usuario, perfil, checkout y una formación en etapas en las que el usuario puede tener acceso al momento de la compra de algún plan. Todo ello gestionado desde un panel CMS.',
+      tools: 'Laravel - NuxtJS - JavaScript - SCSS - RESTApi - Conekta'
+    },
+    sercom: {
+      title: 'Sercom',
+      description: 'Plataforma web CRM en la que se gestionan clientes, usuarios, proveedores, así como presupuestos, pedidos de compra, envíos y recibos de productos.',
+      tools: 'Laravel - VueJS- JavaScript - SCSS - RESTApi'
+    }
   }
 }

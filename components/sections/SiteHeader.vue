@@ -1,5 +1,6 @@
 <template lang="pug">
 header(data-scroll-section id="home")
+  canvas#scene
   .container
     .row.no-gutters.flex-column.justify-content-center.align-items-center(
       data-scroll,
@@ -41,10 +42,22 @@ export default {
 header {
   height: 100vh;
   background-image: url('~assets/header.png');
+  canvas {
+    opacity: 0.25;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    mix-blend-mode: multiply;
+    transform: translateX(0.00001px);
+  }
   .container {
     height: 100%;
     position: relative;
     overflow: hidden;
+    z-index: 2;
     .row {
       height: 100%;
       h1 {

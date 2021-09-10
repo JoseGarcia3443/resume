@@ -7,18 +7,28 @@ section(data-scroll-section id="projects")
       data-scroll-delay='0.2'
     )
       h2(data-scroll class="animate__animated fade_in_up") {{$t('projects.title')}}
+    proyect-list
 </template>
 
 <script>
 export default {
-  name: 'Proyects'
+  name: 'Proyects',
+  components: {
+    'proyect-list': () => import('@/components/aditionals/ProjectList.vue')
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 section {
-  min-height: 100vh;
   padding: 5rem 0;
   background-image: url('~assets/header.png');
+  .container {
+    .row {
+      &:first-child {
+        margin-bottom: 25px;
+      }
+    }
+  }
 }
 </style>
