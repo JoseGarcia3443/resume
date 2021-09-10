@@ -6,10 +6,10 @@ section(data-scroll-section id="profile" data-scroll-id="profile")
       data-scroll-speed='2',
       data-scroll-delay='0.2'
     )
-      h2(data-scroll class="animate__animated fade_in_up") {{$t('profile.title')}}
-      p(data-scroll class="animate__animated fade_in_down") {{$t('profile.description')}}
+      h2 {{$t('profile.title')}}
+      p {{$t('profile.description')}}
     .row.no-gutters.justify-content-around
-      span(v-for="(tool, index) in tools" :key="index" data-scroll data-scroll-speed="6" :data-scroll-delay="`0.${index+1}`") {{$t(`tools.${tool.name}`)}}
+      span(v-for="(tool, index) in tools" :key="index" data-scroll data-scroll-speed="4" :data-scroll-delay="`0.${index+1}`") {{$t(`tools.${tool.name}`)}}
 </template>
 
 <script>

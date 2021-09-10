@@ -26,7 +26,7 @@ export default {
       {
         id: 3,
         title: 'leanfit',
-        image: require('@/assets/projects/leanfit.webp'),
+        image: require('@/assets/projects/leanfit.png'),
         position: true
       },
       {

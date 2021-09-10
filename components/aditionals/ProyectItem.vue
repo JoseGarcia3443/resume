@@ -1,5 +1,5 @@
 <template lang="pug">
-.project__wraper.col-12
+.project__wraper.col-12(:class="project.title")
   .row.no-gutters.justify-content-between.align-items-center
     .information__wrapper.col-12.col-md-6.col-lg-5(
       data-scroll,
@@ -53,7 +53,7 @@ export default {
   position: relative;
   .project__image__overlay {
     position: absolute;
-    opacity: 0.25;
+    opacity: 0.2;
     width: 100%;
     top: 0;
     @media (min-width: 768px) {
@@ -87,7 +87,18 @@ export default {
     }
   }
 }
-
+.leanfit {
+  .image__wrapper {
+    .project__image {
+      width: 50%;
+    }
+  }
+  .project__image__overlay {
+    @media (min-width: 768px) {
+    	width: 25%;
+    }
+  }
+}
 .left {
   left: 0;
 }
