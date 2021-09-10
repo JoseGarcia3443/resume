@@ -26,7 +26,7 @@
     const pointers = []
     const { gl, ext } = getWebGLContext(canvas)
 
-    container.parentElement.addEventListener('mousemove', (e) => {
+    container.addEventListener('mousemove', (e) => {
       // console.log('mousemove')
 
       if (
@@ -78,7 +78,7 @@
       false
     )
 
-    container.parentElement.addEventListener('touchstart', (e) => {
+    container.addEventListener('touchstart', (e) => {
       // console.log('touchstart')
 
       const touches = e.targetTouches
@@ -1340,7 +1340,7 @@ window.addEventListener('load', function() {
   const pointers = []
   const { gl, ext } = getWebGLContext(canvas)
 
-  container.parentElement.addEventListener('mousemove', (e) => {
+  container.addEventListener('mousemove', (e) => {
     // console.log('mousemove')
 
     if (
@@ -1392,7 +1392,7 @@ window.addEventListener('load', function() {
     false
   )
 
-  container.parentElement.addEventListener('touchstart', (e) => {
+  container.addEventListener('touchstart', (e) => {
     // console.log('touchstart')
 
     const touches = e.targetTouches
